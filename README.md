@@ -1,5 +1,7 @@
 Sample run:
 
+```
+Please type the maximum rated input current in A: 100
 Please type the maximum rated output current in mA: 50
 Please type the maximum current to be sensed 1 in A: 30
 Please type the maximum current to be sensed 1 in A: 50
@@ -42,4 +44,4 @@ Score:  2.035, b1:      20, b2:      12, b3:  680000, r1: 19.999, ( 0.31), r2: 1
 Score:  2.034, b1:      20, b2:      12, b3:  620000, r1: 19.999, ( 0.31), r2: 12.000 ( 0.18), beta1: 100.00323, beta2: 166.66989
 Score:  2.034, b1:  450000, b2:      30, b3:      20, r1: 19.999, ( 0.31), r2: 12.000 ( 0.18), beta1: 100.00444, beta2: 166.66667
 Score:  2.034, b1:  430000, b2:      30, b3:      20, r1: 19.999, ( 0.31), r2: 12.000 ( 0.18), beta1: 100.00465, beta2: 166.66667
-...
+```
