@@ -1,3 +1,5 @@
+from __future__ import division
+
 from collections import namedtuple
 from itertools import product
 import time
@@ -68,7 +70,7 @@ if __name__ == "__main__":
 
     number_of_turns = max_rated_input_current / max_rated_output_current
     
-    combinations_to_save = 10
+    combinations_to_save = 50
     good_combinations = []
 
     highest_score = float("Inf")
