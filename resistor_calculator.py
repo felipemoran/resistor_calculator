@@ -5,6 +5,7 @@ from itertools import product
 import time
 from math import sqrt
 
+DEBUG = False
 Combination = namedtuple("Combination", ["score", "b1", "b2", "bc"])
 VCCl = 2.1
 VCCu = 3.75
@@ -54,17 +55,18 @@ def calculate_beta(r1, r2, number_of_turns):
 if __name__ == "__main__":
     resistors = [1, 1.2, 1.5, 1.8, 2, 2.4, 3, 3.3, 3.6, 3.9, 4.3, 4.7, 5.1, 5.6, 6.2, 6.8, 7.5, 8.2, 9.1, 10, 12, 15, 18, 20, 24, 27, 30, 33, 36, 39, 43, 47, 51, 56, 62, 68, 75, 82, 91, 100, 120, 150, 180, 200, 220, 240, 270, 300, 330, 360, 390, 430, 470, 510, 560, 620, 680, 750, 820, 910, 1000, 1500, 1800, 2000, 2200, 2400, 2700, 3000, 3300, 3600, 3900, 4300, 4700, 5100, 5600, 6200, 6800, 7200, 7500, 8200, 9100, 10000, 12000, 15000, 18000, 20000, 22000, 24000, 27000, 30000, 33000, 36000, 39000, 43000, 47000, 51000, 56000, 62000, 68000, 75000, 82000, 91000, 100000, 120000, 150000, 180000, 200000, 220000, 240000, 270000, 300000, 330000, 360000, 390000, 430000, 450000, 510000, 560000, 620000, 680000, 750000, 820000, 910000, 1000000, 1500000, 2000000, 3000000, float("inf")]
 
-    max_rated_input_current = 100
-    max_rated_output_current = 0.05
-    max_practical_input_current_1 = 30
-    max_practical_input_current_2 = 50
-    safety_factor = 1.5
-
-    # max_rated_input_current = float(input("Please type the maximum rated input current in A: "))
-    # max_rated_output_current = float(input("Please type the maximum rated output current in mA: "))/1000
-    # max_practical_input_current_1 = float(input("Please type the maximum current to be sensed 1 in A: "))
-    # max_practical_input_current_2 = float(input("Please type the maximum current to be sensed 1 in A: "))
-    # safety_factor = float(input("Please type the value of the safety factor: "))
+    if DEBUG:
+        max_rated_input_current = 100
+        max_rated_output_current = 0.05
+        max_practical_input_current_1 = 30
+        max_practical_input_current_2 = 50
+        safety_factor = 1.5
+    else:
+        max_rated_input_current = float(input("Please type the maximum rated input current in A: "))
+        max_rated_output_current = float(input("Please type the maximum rated output current in mA: "))/1000
+        max_practical_input_current_1 = float(input("Please type the maximum current to be sensed 1 in A: "))
+        max_practical_input_current_2 = float(input("Please type the maximum current to be sensed 1 in A: "))
+        safety_factor = float(input("Please type the value of the safety factor: "))
 
     print("")
 
