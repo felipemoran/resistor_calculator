@@ -1,4 +1,4 @@
-Sample run:
+Sample run with parameters for smart marina deployment:
 
 ```
 Please type the maximum rated input current in A: 100
