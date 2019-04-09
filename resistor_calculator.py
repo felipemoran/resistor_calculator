@@ -62,10 +62,10 @@ if __name__ == "__main__":
         max_practical_input_current_2 = 50
         safety_factor = 1.5
     else:
-        max_rated_input_current = float(input("Please type the maximum rated input current in A: "))
-        max_rated_output_current = float(input("Please type the maximum rated output current in mA: "))/1000
-        max_practical_input_current_1 = float(input("Please type the maximum current to be sensed 1 in A: "))
-        max_practical_input_current_2 = float(input("Please type the maximum current to be sensed 2 in A: "))
+        max_rated_input_current = float(input("Please type the maximum sensor rated input current (A): "))
+        max_rated_output_current = float(input("Please type the maximum rated output current (mA): "))/1000
+        max_practical_input_current_1 = float(input("Please type the maximum current to be measured 1 (A): "))
+        max_practical_input_current_2 = float(input("Please type the maximum current to be measured 2 (A): "))
         safety_factor = float(input("Please type the value of the safety factor: "))
 
     print("")
